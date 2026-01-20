@@ -1,0 +1,13 @@
+# Notes
+1.) top -l 1 Runs the top command once and is specific to macOS.
+2.) awk '{ print $1 }' this splits each line of input by default on whitespaces with $1 as the first field.
+2.1) awk '/CPU usage/{ print $3 }' will look for a line containing CPU usage and print the 3rd field.
+3.) sed 's/%//' is used to replace all % with nothing so as to remove them.
+4.) | represents a pipe and takes the output of one command a feeds it as iput to the next command.
+5.) bc takes in math equations or comparison as strings and computes it into numberd or true and false.
+5.1) -l is a flag with bc that will compare decimal numbers or output numbers with decimals.
+5.2) scale=2; is used on the same line as passing the math equation string to bc to tell bc to use 2 decial places in the result.
+6.) echo is used to print to screen or print to a file if used without > or >>.
+7.) df / runs the disk free command for / which is the root filesystem
+8.) tail -1 skips the header and gets the last line
+9.) || will run command to the right only if command on left fails

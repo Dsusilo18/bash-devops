@@ -1,0 +1,4 @@
+User john logged in from 192.168.0.1
+ERROR: Unable to reach 10.0.0.5
+User alice failed login from 172.16.42.7
+WARN: Disk almost full on node2

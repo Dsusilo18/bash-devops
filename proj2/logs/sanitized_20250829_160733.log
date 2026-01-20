@@ -1,0 +1,4 @@
+User [REDACTED_USER] logged in from [REDACTED_IP]
+issue: Unable to reach [REDACTED_IP]
+User [REDACTED_USER] failed login from [REDACTED_IP]
+WARN: Disk almost full on node2

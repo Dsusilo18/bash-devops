@@ -1,0 +1,24 @@
+# Notes
+1.) "$0" The 0th argument which would be the script name.
+2.) $# would get the number of arguments passed to the script.
+3.) set -euo pipefail is used for safer scripting.
+4.) "$1" The 1st argument passed to the script but if its inside a function its the first argument passed.
+5.) grep with -E is for extended regex so that | doesn't need to be escaped with a backlash.
+6.) -i in grep is used fo case-insensitive.
+7.) > is used for file redirection.
+8.) [[  -f.. ]] is used to find if the file exists.
+9.) exit 2 is used to exit with custom codes.
+10.) "${foo,,}" would make the value of the string variable foo into all lowercase.
+11.) -lt -gt -eq is only for integer comparisons.
+12.) "$(..)" runs a command and substitutes its output.
+13.) ".." is used to reference variables with spaces, newlines, wildcards (*, ?) or empty values. Its not needed when using echo with a number.
+14.) $(( x + 2 )) is used for arithmatic manipulation by adding 2 to x.
+15.) "$*" Is the array expanding to a single string with all arguments joined by the IFS separator.
+16.) IFS= means that IFS variable is set to null so no seperators are used and will read a line without breaking it up by whitespaces or escaping backslashes.
+17.) "${array[@]}" references all the values in the array.
+
+# Question:
+1.) What does $0 mean in a script?
+2.) Whats the difference between "$@" and "$*"?
+3.) How do you define and call a function in Bash?
+4.) What does set -euo pipefail do?

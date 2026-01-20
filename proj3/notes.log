@@ -1,0 +1,12 @@
+# Notes
+1.) inotify-tools provides a mechanism for applications to monitor filesystem events.
+1.1) inotifywait is a command from inotify that allows Bash scripts to react to file changes without constant polling.
+1.2) -m with inotifywait is a flag for monitor mode.
+1.3) -e modify with inotifywait is a flag for triggering only when the file changes. This can be used without the -m flag.
+1.4) By default inotifywait prints line like "path event". There's no third field unless you're watching a directory and using --format.
+2.) << signifies a here document and allows you to input multiple lines of text.
+3.) read -r path event file reads one line of input and the -r prevents backslashes interpreted as escapes with the first word stored in path, the second in event and the third in file.
+4.) ./script.sh is used to call a script that is in the same folder but not in $PATH. Use .. if its in the directory on top.
+5.) >> Used to append output.
+6.) "${1:-}" Takes in the first argument passed, if nothing is passed, pass an empty string.
+7.) && can be used in way where if the left condition is true, run the right conditon.

@@ -1,0 +1,26 @@
+# Notes
+1.) "${1:-logs/app.log}" This will take in the first argument passed to the script or defaults to logs/app.log
+2.) date This is a command used to display or set the system date and time.
+2.1) + is an option that tells date to format its output to a specific formatted string.
+2.2) %Y Represents the year for date formatting. (2025)
+2.3) %m Represents the month as a zero padded decimal number. (01-12)
+2.4) %d Represents the day of the month as a zero padded decimal number. (01-31)
+2.5) _ would be a literall underscore character for date formatting.
+2.6) %H Represents the hour as a zero padded decimal number. (00-23)
+2.7) %M Represents the minute as a zero padded decimal number. (00-59)
+2.8) %S Represents the second as a zero padded decimal number. (00-60)
+3.) sed -E is used to replace string in a file using exteded regex.
+4.) tr is a bash command used to translate by converting to upper or lowercase, squeeze to remove duplicates or delete characters from an input.
+5.) "${var%.log}_low.log" uses % to signify to strip the .log suffix.
+6.) -s This becomes True if the file exists and the size is greater than 0.
+7.) find is a command used to search for files and directories in a directory hierarchy.
+7.1) -name can be used with find to search for specific filenames or extensions with "*.log" or "config*".
+7.2) -mmin is used with find to find the file that matches based on modification time in minutes.
+7.3) -mmin +N is modified for more than N minutes ago.
+7.4) -mmin N is modified exactly N minutes ago.
+7.5) -mmin -N is modified less than N minutes ago.
+7.6) -size can be used with find to find files by size. (-size +1M) for bigger than 1MB.
+7.7) -type can be used to find files or directories. (-type d) or (-type f)
+8.) < "$file" > This will only work if the output file is different than the original so that it can be read then sends output to another file.
+9.) "${..}" is used for parameter expansion, expanding a variable, possibly with modifiers.
+10.) "" are used whenever the output value has spaces, newlines or tabs.
